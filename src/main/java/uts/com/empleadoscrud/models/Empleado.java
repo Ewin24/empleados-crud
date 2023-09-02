@@ -11,6 +11,10 @@ import lombok.NoArgsConstructor;
 public class Empleado {
     private String nombre;
     private String apellido;
+    private String email;
+    private int horasTrabajadas;
     private String tipoContrato;
+    private double salario;
+
 
 }
