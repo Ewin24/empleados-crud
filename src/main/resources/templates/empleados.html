@@ -15,28 +15,28 @@
 
     </head>
     <body>
-        <h1>Lista de Empleados</h1>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Apellido</th>
-                    <th>Email</th>
-                    <th>Horas Trabajadas</th>
-                    <th>Tipo Contrato</th>
-                    <th>Salario</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr th:each="empleado : ${empleados}">
-                    <td th:text="${empleado.nombre}"></td>
-                    <td th:text="${empleado.apellido}"></td>
-                    <td th:text="${empleado.email}"></td>
-                    <td th:text="${empleado.horasTrabajadas}"></td>
-                    <td th:text="${empleado.tipoContrato}"></td>
-                    <td th:text="${empleado.salario}"></td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="container">
+            <h1>Lista de Empleados</h1>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Email</th>
+                        <th>Horas Trabajadas</th>
+                        <th>Direccion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="empleado : ${empleados}">
+                        <td th:text="${empleado.nombre}"></td>
+                        <td th:text="${empleado.apellido}"></td>
+                        <td th:text="${empleado.correo}"></td>
+                        <td th:text="${empleado.celular}"></td>
+                        <td th:text="${empleado.direccion}"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </body>
 </html>
